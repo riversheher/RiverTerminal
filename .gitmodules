@@ -1,0 +1,3 @@
+[submodule "themes/LeTerminal"]
+	path = themes/LeTerminal
+	url = https://github.com/riversheher/LeTerminal.git

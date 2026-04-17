@@ -1,0 +1,53 @@
+baseURL: 'https://www.riversheher.me/'
+languageCode: 'en-us'
+title: 'River Wang'
+theme: 'LeTerminal'
+
+params:
+  terminalTitle: "river@pc:~"
+  siteName: "River Wang"
+  siteVersion: "v1.0.0"
+  profileName: "River Wang"
+  profileSubtitle: "Software Developer | Internet Privacy Advocate | LGBTQ+ Ally"
+  profileBio: >
+    Nerd by nature, developer by trade.  I specialize in backend systems, and ETL pipelines.  
+    I have a passion for inclusive software, and I am always looking for ways to contribute to the community.  
+    When I'm not coding, you can find me hosting board game nights, advocating for internet privacy, or reading!
+    I love everything from sci-fi, to relationship help, and eastern philosophy.
+    I believe software should start with developers who care about the people behind the screen.
+  profileInitials: "RW"
+  profileImage: "images/profile-sq.jpg"
+
+  background:
+    image: "images/f42-01-day.png"
+    darkImage: "images/f42-01-night.png"
+    lightImage: "images/f42-01-day.png"
+
+  commands:
+    - name: "help"
+      label: "help"
+      description: "Show available commands"
+    - name: "about"
+      label: "about"
+      description: "Learn more about me"
+    - name: "skills"
+      label: "skills"
+      description: "See my skills and expertise"
+    - name: "projects"
+      label: "projects"
+      description: "Explore my projects and contributions"
+    - name: "experience"
+      label: "experience"
+      description: "View my work experience and background"
+    - name: "contact"
+      label: "contact"
+      description: "Get in touch with me"
+
+# # Output configuration — required for HTMX fragment rendering.
+# # The 'fragment' outputFormat is defined by the theme; only 'outputs' is needed here.
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
+    - fragment

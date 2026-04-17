@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+<script>
+  (function() {
+    var t = localStorage.getItem('theme');
+    if (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      t = 'light';
+    }
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>River Wang</title>
+<meta name="description" content="Nerd by nature, developer by trade.  I specialize in backend systems, and ETL pipelines.   I have a passion for inclusive software, and I am always looking for ways to contribute to the community.   When I&#39;m not coding, you can find me hosting board game nights, advocating for internet privacy, or reading! I love everything from sci-fi, to relationship help, and eastern philosophy. I believe software should start with developers who care about the people behind the screen.
+">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/terminal.min.19ccf2e3315e0554071bcf6590c2c90ffc7e2c43b128e099b2d73593c224effc.css" integrity="sha256-Gczy4zFeBVQHG89lkMLJD/x&#43;LEOxKOCZstc1k8Ik7/w=">
+
+
+
+
+
+<style>
+  :root {
+    --term-bg: #1d2021;
+    --term-chrome-bg: #282828;
+    --page-bg: #0a0e1a;
+    --term-border: #7daea3;
+    --term-border-glow: rgba(30, 100, 200, 0.5);
+    --term-text: #ebdbb2;
+    --term-text-dim: #928374;
+    --term-prompt: #b8bb26;
+    --term-command: #83a598;
+    --term-heading: #fabd2f;
+    --term-link: #83a598;
+    --term-link-hover: #8ec07c;
+    --term-error: #fb4934;
+    --term-success: #b8bb26;
+    --radio-red: #ff5f56;
+    --radio-yellow: #ffbd2e;
+    --radio-green: #27c93f;
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+        
+          --page-bg-image: url('/images/f42-01-night.png');
+        
+      
+      
+      
+      
+      
+      --page-bg-overlay-display: block;
+    
+  }
+
+  [data-theme="light"] {
+    --term-bg: #fbf1c7;
+    --term-chrome-bg: #d5c4a1;
+    --page-bg: #504945;
+    --term-border: #7daea3;
+    --term-border-glow: rgba(181, 118, 20, 0.25);
+    --term-text: #3c3836;
+    --term-text-dim: #655751;
+    --term-prompt: #79740e;
+    --term-command: #076678;
+    --term-heading: #b57614;
+    --term-link: #076678;
+    --term-link-hover: #427b58;
+    --term-error: #cc241d;
+    --term-success: #79740e;
+    
+
+    
+    
+      
+      
+      
+        
+          --page-bg-image: url('/images/f42-01-day.png');
+        
+      
+      
+    
+  }
+</style>
+
+</head>
+<body>
+  <div class="desktop" id="desktop">
+    <div class="terminal-container">
+      <div class="terminal-window">
+        
+        <div class="terminal-chrome">
+  <div class="terminal-chrome__buttons">
+    <span class="terminal-chrome__button terminal-chrome__button--close"></span>
+    <span class="terminal-chrome__button terminal-chrome__button--minimize"></span>
+    <span class="terminal-chrome__button terminal-chrome__button--maximize"></span>
+  </div>
+  <span class="terminal-chrome__title">
+    river@pc:~
+  </span>
+  <div class="terminal-chrome__controls">
+    <button class="terminal-chrome__theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" onclick="toggleTheme()">
+      <span class="terminal-chrome__btn-icon" id="theme-toggle-icon">☀</span><span class="terminal-chrome__btn-label" id="theme-toggle-label"> Light</span>
+    </button>
+    <button class="terminal-chrome__mode-toggle" id="mode-toggle" aria-label="Toggle keyboard mode">
+      <span class="terminal-chrome__btn-icon" id="mode-toggle-icon">⌨</span><span class="terminal-chrome__btn-label" id="mode-toggle-label"> Keyboard</span>
+    </button>
+  </div>
+</div>
+
+
+        
+        <div class="terminal-body" id="terminal-body" role="log" aria-live="polite">
+
+          
+          <div id="home-content">
+            
+<div class="profile-card">
+  <div class="profile-card__avatar ">
+    
+        <img src="/images/profile-sq.jpg" alt="River Wang">
+      
+    
+  </div>
+  <div class="profile-card__info">
+    <h1 class="profile-card__name">River Wang</h1>
+    <p class="profile-card__subtitle">Software Developer | Internet Privacy Advocate | LGBTQ&#43; Ally</p>
+    
+      <p class="profile-card__bio">Nerd by nature, developer by trade.  I specialize in backend systems, and ETL pipelines.   I have a passion for inclusive software, and I am always looking for ways to contribute to the community.   When I&#39;m not coding, you can find me hosting board game nights, advocating for internet privacy, or reading! I love everything from sci-fi, to relationship help, and eastern philosophy. I believe software should start with developers who care about the people behind the screen.
+</p>
+    
+  </div>
+</div>
+
+<div class="welcome-message">
+  <p class="welcome-message__title">
+    Welcome to River Wang v1.0.0
+  </p>
+  <p class="welcome-message__hint">
+    Type "help" to see available commands.
+  </p>
+</div>
+
+          </div>
+
+          
+          <div id="dynamic-content">
+            
+
+<div class="command-output">
+  <div class="prompt-line">
+    <span class="prompt">$</span> <span class="command-echo">experience</span>
+  </div>
+  <div class="output-body">
+    <h1 id="-work-experience">💼 Work Experience</h1>
+<hr>
+<h2 id="jd-power">J.D. Power</h2>
+<p><em>2023 - Present</em></p>
+<p><strong>Software Developer II</strong>
+<em>2025 - Present</em></p>
+<p><strong>Software Development Intern</strong>
+<em>2023 - 2024</em></p>
+<ul>
+<li>Delivered key projects in the vehicle data ecosystem ahead of schedule and with high quality for enterprise clients in the Digital Dealership, Fleet Management, Manufacturing, and Insurance industries.</li>
+<li>Reduced QA defects by 50% by improving code review process and establishing quality standards for use of internal libraries.</li>
+<li>Maintained upgrade and deprecation strategy for internal code generation libraries, ensuring smooth transitions and minimizing disruptions to development teams and backwards compatability.  With over 1 300 dependent classes, and 20+ dependent services, this was a critical initiative for the company.</li>
+<li>Contributed to 2 high volume, high data throughput services in the vehicle data ecosystem responsible for processing up to 1 million messages per day, with a focus on improving accuracy and reliability of data processing pipelines.</li>
+<li>Contributed to over 50 ETL processes for data ingestion, transformation, and loading, improving efficiency and reliability of business-critical data pipelines.</li>
+</ul>
+<p><strong>Java, Spring Boot, Apache Kafka, Apache Storm, ETL, Microservices, Cloudflare, Docker, Kubernetes, ANTLR, CassandraDB, MySQL</strong></p>
+<hr>
+<h2 id="university-of-western-ontario-department-of-economics">University of Western Ontario, Department of Economics</h2>
+<p><em>2024 - 2025</em></p>
+<p><strong>Research Assistant</strong></p>
+<ul>
+<li>Key contributor to the Berkeley Options Database Modernization project.</li>
+<li>Gathered requriements, designed database schema, and implemented ETL pipelines to modernize the database and improve data accessibility for researchers.</li>
+<li>Transformed legacy financial data from 1976 to 1996 to PostgreSQL database.</li>
+</ul>
+<p><strong>Python, PostgreSQL, ETL</strong></p>
+<hr>
+<h2 id="university-of-alberta-department-of-digital-humanities">University of Alberta, Department of Digital Humanities</h2>
+<p><em>2022 - 2023</em></p>
+<p><strong>Research Assistant</strong></p>
+<ul>
+<li>Contributed to First Three Years project, a digital humanities initiative focused on the early years of graduates from game development programs.</li>
+<li>Conducted data collection, cleaning, and analysis to understand career trajectories of game development graduates.</li>
+<li>Developed admin dashboard for data management and visualization.</li>
+</ul>
+<p><strong>Go, Python, Twitter API</strong></p>
+<hr>
+<h1 id="-education">📔 Education</h1>
+<h2 id="university-of-western-ontario">University of Western Ontario</h2>
+<p><strong>Bachelor of Science with Honours in Computer Science and Specialization in Software Engineering</strong></p>
+<ul>
+<li>GPA 3.7/4.0</li>
+<li>Dean&rsquo;s Honour List, Women in Tech Society</li>
+</ul>
+<h1 id="-volunteer-experience">🤝 Volunteer Experience</h1>
+<h2 id="ayr-and-district-citizens-association">Ayr and District Citizens Association</h2>
+<p><strong>Technology Mentor</strong></p>
+<ul>
+<li>Provide mentorship and support to local seniors in the beginner stages of learning technology, including smartphones, computers, and internet usage.</li>
+<li>Host weekly sessions at the local library to assist with technology-related questions and challenges, fostering digital literacy and inclusion in the community.</li>
+</ul>
+
+    
+
+
+<div class="content-meta">
+  <div class="content-meta__row">
+    <span class="content-meta__label">Author &nbsp;</span>
+    <span class="content-meta__sep">&middot;</span>
+    <span class="content-meta__value">River Wang</span>
+  </div>
+  <div class="content-meta__row">
+    <span class="content-meta__label">Updated</span>
+    <span class="content-meta__sep">&middot;</span>
+    <span class="content-meta__value">April 17th 2026</span>
+    <span class="content-meta__divider">|</span>
+    <span class="content-meta__label">Created</span>
+    <span class="content-meta__sep">&middot;</span>
+    <span class="content-meta__value">April 17th 2026</span>
+  </div>
+</div>
+
+  </div>
+</div>
+
+          </div>
+
+          
+          
+<div class="command-bar" id="command-bar">
+  <p class="command-bar__prompt">$ Click a command:</p>
+  <div class="command-bar__links">
+    
+    <a href="/help/"
+       hx-get="/help/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="help"
+       data-cmd-description="Show available commands"
+       data-cmd-fragment="/help/fragment.html">
+      help
+    </a>
+    
+    <a href="/about/"
+       hx-get="/about/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="about"
+       data-cmd-description="Learn more about me"
+       data-cmd-fragment="/about/fragment.html">
+      about
+    </a>
+    
+    <a href="/skills/"
+       hx-get="/skills/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="skills"
+       data-cmd-description="See my skills and expertise"
+       data-cmd-fragment="/skills/fragment.html">
+      skills
+    </a>
+    
+    <a href="/projects/"
+       hx-get="/projects/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="projects"
+       data-cmd-description="Explore my projects and contributions"
+       data-cmd-fragment="/projects/fragment.html">
+      projects
+    </a>
+    
+    <a href="/experience/"
+       hx-get="/experience/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="experience"
+       data-cmd-description="View my work experience and background"
+       data-cmd-fragment="/experience/fragment.html">
+      experience
+    </a>
+    
+    <a href="/contact/"
+       hx-get="/contact/fragment.html"
+       hx-target="#dynamic-content"
+       hx-swap="beforeend"
+       hx-push-url="false"
+       class="terminal-command"
+       data-cmd-name="contact"
+       data-cmd-description="Get in touch with me"
+       data-cmd-fragment="/contact/fragment.html">
+      contact
+    </a>
+    
+    <a href="#"
+       onclick="clearTerminal(); return false;"
+       class="terminal-command"
+       data-cmd-name="clear"
+       data-cmd-description="Clear terminal output">
+      clear
+    </a>
+  </div>
+</div>
+
+
+<div class="keyboard-bar" id="keyboard-bar">
+  <div class="keyboard-bar__input-line">
+    <span class="keyboard-bar__prompt">$</span>
+    <div class="keyboard-bar__input-wrapper">
+      <input type="text"
+             id="keyboard-input"
+             class="keyboard-bar__input"
+             autocomplete="off"
+             autocapitalize="off"
+             spellcheck="false"
+             aria-label="Terminal command input"
+             aria-autocomplete="list"
+             aria-controls="keyboard-suggestions"
+             aria-expanded="false"
+             placeholder="Type a command...">
+      <div class="keyboard-suggestions" id="keyboard-suggestions" role="listbox" aria-label="Command suggestions"></div>
+    </div>
+  </div>
+  <p class="keyboard-bar__hint text-dim">Tab to complete · ↑↓ history · Enter to run</p>
+</div>
+
+
+        </div>
+      </div>
+
+      
+      
+
+
+<div class="attribution">
+  
+    <a href="https://github.com/riversheher/LeTerminal" target="_blank" rel="noopener noreferrer">Made with Le Terminal</a>
+  
+</div>
+
+
+    </div>
+  </div>
+
+  
+
+
+
+
+
+<script src="/js/htmx.min.js"></script>
+<script src="/js/command-registry.js"></script>
+<script src="/js/keyboard.js"></script>
+<script src="/js/terminal.js"></script>
+
+</body>
+</html>
