@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 author: "River Wang"
-updated: 2026-04-17
+updated: 2026-04-23
 created: 2026-04-17
 ---
 
@@ -18,10 +18,9 @@ created: 2026-04-17
 **Software Development Intern**
 *2023 - 2024*
 
-- Delivered key projects in the vehicle data ecosystem ahead of schedule and with high quality for enterprise clients in the Digital Dealership, Fleet Management, Manufacturing, and Insurance industries.
-- Reduced QA defects by 50% by improving code review process and establishing quality standards for use of internal libraries.
-- Maintained upgrade and deprecation strategy for internal code generation libraries, ensuring smooth transitions and minimizing disruptions to development teams and backwards compatability.  With over 1 300 dependent classes, and 20+ dependent services, this was a critical initiative for the company.
-- Contributed to 2 high volume microservices, and over 50 ETL processes in the vehicle data ecosystem, processing millions of records daily.
+I'm currently on the Internal Services team, where I work on maintaining and improving the data platform that powers many of J.D. Power's products and services.  My work includes both the ingestion and processing of data through ETLs, as well as the access and presentation of data through APIs and internal tools.
+
+My area of expertise was on VIN-level and Trim-level data, which is used in many of J.D. Power's automotive products which you can find {{< terminal-link url="https://www.jdpower.com/business/automotive" >}}here{{< /terminal-link >}}!
 
 
 **Java, Spring Boot, Apache Kafka, Apache Storm, ETL, Microservices, Cloudflare, Docker, Kubernetes, ANTLR, CassandraDB, MySQL**
@@ -32,8 +31,8 @@ created: 2026-04-17
 *2024 - 2025*
 
 **Research Assistant**
-- Key contributor to the Berkeley Options Database Modernization project.
-- Transformed legacy financial data from 1976 to 1996 to PostgreSQL database.
+
+I managed a small group of undergraduate research assistants to develop a data pipeline which modernized legacy options trading data from the Berkley Options Database.
 
 **Python, PostgreSQL, ETL**
 
@@ -43,24 +42,7 @@ created: 2026-04-17
 *2022 - 2023*
 
 **Research Assistant**
-- Contributed to First Three Years project, a digital humanities initiative focused on the early years of graduates from game development programs.
-- Developed admin dashboard for data management and visualization.
+
+My first software job!  I developed a Twitter bot that scraped network information from consenting users for a research project about professional networks on Twitter, and an administrative web UI for initiating and monitoring the bot's data collection process.
 
 **Go, Python, Twitter API**
-
----
-
-## 📔 Education
-
-### University of Western Ontario
-
-**Bachelor of Science with Honours in Computer Science and Specialization in Software Engineering**
-- GPA 3.7/4.0
-- Dean's Honour List, Women in Tech Society
-
-
-## 🤝 Volunteer Experience
-
-### Ayr and District Citizens Association
-**Technology Mentor**
-- Provide mentorship and support to local seniors in the beginner stages of learning technology, including smartphones, computers, and internet usage.

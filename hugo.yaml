@@ -42,6 +42,9 @@ params:
     - name: "contact"
       label: "contact"
       description: "Get in touch with me"
+    - name: "education"
+      label: "education"
+      description: "See my educational background"
 
 # # Output configuration — required for HTMX fragment rendering.
 # # The 'fragment' outputFormat is defined by the theme; only 'outputs' is needed here.
